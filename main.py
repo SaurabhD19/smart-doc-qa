@@ -54,10 +54,17 @@ for r in result:
 vectorstore = Chroma(
     persist_directory = "./chroma_db",
     embedding_function = HuggingFaceEndpointEmbeddings(
-        model = "sentence-transformers/all-mpnet-base-v2",
-        huggingfacehub_api_token = os.getenv("HF_TOKEN"),)
-)
+        model="sentence-transformers/all-mpnet-base-v2",
+        task = "feature-extraction",
+        huggingfacehub_api_token = os.getenv("HF_TOKEN"),
+))
 
+querry2 = input("enter the Second querry on the loaded Database \n")
+result2 = vectorstore.similarity_search(querry2,k=1)
+
+for r in result2:
+    print(r.page_content)
+    print(".....")
 
 
 
