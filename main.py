@@ -5,9 +5,12 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEndpointEmbeddings
 from langchain_chroma import Chroma
 
+
+
 from dotenv import load_dotenv 
 import os
 load_dotenv()
+
 
 
 # Loading the PDF content 
