@@ -1,15 +1,9 @@
-# Smart Q&A Doc 
+# Smart Q&A Doc
 
-"A document Answering System Build with RAG Architecture upload the Document and get the Correct Answer Quickly."
-
-
+"A document Answering System built with RAG Architecture — upload any document and get accurate answers instantly"
 
 
-
-
-
-
-## 📁Project Structure 
+## 📁 Project Structure
 Smart-Doc-qa/
 ├── app.py
 ├── main.py
@@ -20,15 +14,19 @@ Smart-Doc-qa/
 
 
 
-## 💡Files Supported 
-- PDF File 
+## 💡 Files Supported
+- PDF (.pdf)
+- Word (.docx)
+- Excel (.xlsx)
+- CSV (.csv)
+- Text (.txt)
 
 
 
-# Concepts Used 
-RAG (Retrival Augmented Generation)
-Text Chunking and Embeddings 
-Vector Similarity Search 
-LLM Prompt chaining
+## 🧠 Concepts Used 
+- RAG (Retrival Augmented Generation)
+- Text Chunking and Embeddings 
+- Vector Similarity Search 
+- LLM Prompt chaining
 
 
